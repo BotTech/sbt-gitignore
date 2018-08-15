@@ -1,24 +1,33 @@
+<p align="center">
+    <a href="https://www.gitignore.io">
+        <img src="https://cdn.rawgit.com/joeblau/gitignore.io/master/Public/img/gitignoreio.svg" />
+    </a>
+    <br>
+    <strong>Create useful .gitignore files for your project</strong>
+</p>
+
 # sbt-gitignore
 
-An sbt plugin that uses [gitignore.io](https://www.gitignore.io/) to create useful .gitignore files for your project.
+An sbt plugin that adds commands for [gitignore.io](https://www.gitignore.io/) to create useful .gitignore files for your project.
 
 ## Usage
 
-This plugin requires sbt 1.0.0+
+This plugin requires sbt 1.0.0+.
 
-### Testing
+### Installation
 
-Run `test` for regular unit tests.
+You can enable the plugin in any given project by adding this into the `project/plugins.sbt` file:
+```scala
+addSbtPlugin("nz.co.bottech" % "sbt-gitignore" % "1.0.0")
+```
 
-Run `scripted` for [sbt script tests](http://www.scala-sbt.org/1.x/docs/Testing-sbt-plugins.html).
+To have it available in all your projects, add that line into the `~/.sbt/1.0/plugins/plugins.sbt` file.
 
-### Publishing
+### Tasks
 
-1. publish your source to GitHub
-2. [create a bintray account](https://bintray.com/signup/index) and [set up bintray credentials](https://github.com/sbt/sbt-bintray#publishing)
-3. create a bintray repository `sbt-plugins` 
-4. update your bintray publishing settings in `build.sbt`
-5. `sbt publish`
-6. [request inclusion in sbt-plugin-releases](https://bintray.com/sbt/sbt-plugin-releases)
-7. [Add your plugin to the community plugins list](https://github.com/sbt/website#attention-plugin-authors)
-8. [Claim your project an Scaladex](https://github.com/scalacenter/scaladex-contrib#claim-your-project)
+#### List
+
+To list all the available templates:
+```sbtshell
+> show gitIgnoreList
+```
