@@ -1,10 +1,7 @@
-package nz.co.bottech.sbt
+package nz.co.bottech.sbt.gitignore
 
-import java.net.URL
-
-import nz.co.bottech.sbt.GitIgnoreKeys._
-import sbt.io.IO
-import sbt.{Def, Task}
+import nz.co.bottech.sbt.gitignore.GitIgnoreKeys._
+import sbt._
 
 object GitIgnoreTasks {
 

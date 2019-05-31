@@ -1,33 +1,56 @@
-<p align="center">
-    <a href="https://www.gitignore.io">
-        <img src="https://cdn.rawgit.com/joeblau/gitignore.io/master/Public/img/gitignoreio.svg" />
-    </a>
-    <br>
-    <strong>Create useful .gitignore files for your project</strong>
-</p>
-
 # sbt-gitignore
 
-An sbt plugin that adds commands for [gitignore.io](https://www.gitignore.io/) to create useful .gitignore files for your project.
+[![Build Status]](https://travis-ci.org/BotTech/sbt-gitignore)
+[![Download]](https://bintray.com/bottech/sbt-plugins/sbt-gitignore/_latestVersion)
 
-## Usage
+An sbt plugin that generates .gitignore files from gitignore.io
+
+## Setup
 
 This plugin requires sbt 1.0.0+.
 
-### Installation
-
-You can enable the plugin in any given project by adding this into the `project/plugins.sbt` file:
+Add this plugin to your `project/plugins.sbt` file:
 ```scala
-addSbtPlugin("nz.co.bottech" % "sbt-gitignore" % "1.0.0")
+addSbtPlugin("nz.co.bottech.sbt.gitignore" % "sbt-gitignore" % "1.0.0")
 ```
 
-To have it available in all your projects, add that line into the `~/.sbt/1.0/plugins/plugins.sbt` file.
+## Usage
 
-### Tasks
+TODO.
 
-#### List
+## Contributing
 
-To list all the available templates:
-```sbtshell
-> show gitIgnoreList
-```
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Credits
+
+This plugin was generated from the [BotTech/sbt-autoplugin.g8] Giter8 template.
+
+Credit to these Open Source projects:
+* [BotTech/sbt-gpg]
+* [dwijnand/sbt-dynver]
+* [ohnosequences/sbt-github-release]
+* [sbt/sbt-bintray]
+
+Special thanks to:
+* [GitHub] for hosting the git repository.
+* [JFrog] for distributing the releases on Bintray.
+* [Lightbend] for [Scala], [sbt] and distributing the plugin in the community sbt repository.
+* [scalacenter] for [Scala] and indexing this project in the [Scaladex].
+* [Travis CI] for running the build.
+* All the other contributors who made this project possible.
+
+[Build Status]: https://travis-ci.org/BotTech/sbt-gitignore.svg?branch=master
+[BotTech/sbt-autoplugin]: https://github.com/BotTech/sbt-autoplugin.g8
+[Download]: https://api.bintray.com/packages/bottech/sbt-plugins/sbt-gitignore/images/download.svg
+[dwijnand/sbt-dynver]: https://github.com/dwijnand/sbt-dynver
+[Github]: https://github.com
+[JFrog]: https://jfrog.com
+[Lightbend]: https://www.lightbend.com
+[ohnosequences/sbt-github-release]: https://github.com/ohnosequences/sbt-github-release
+[sbt]: https://www.scala-sbt.org
+[sbt/sbt-bintray]: https://github.com/sbt/sbt-bintray
+[Scala]: https://www.scala-lang.org
+[scalacenter]: https://scala.epfl.ch
+[Scaladex]: https://index.scala-lang.org
+[Travis CI]: https://travis-ci.org
